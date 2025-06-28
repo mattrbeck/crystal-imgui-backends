@@ -9,7 +9,7 @@ This shard makes it easy to use ImGui backends from Crystal.
    ```yaml
    dependencies:
     imgui-backends:
-      github: mattrberry/crystal-imgui-backends
+      github: mattrbeck/crystal-imgui-backends
       tag: v1.88 # select your version here by git tag
     imgui: # chances are you want to include imgui as well
       github: oprypin/crystal-imgui
@@ -39,7 +39,7 @@ make
 crystal examples/imgui_impl_opengl3.cr
 ```
 
-For a concrete example using this shard, see https://github.com/mattrberry/crab. The `make shard` is run as a postinstall step when this shard is installed, so ImGui links are generated automatically.
+For a concrete example using this shard, see https://github.com/mattrbeck/crab. The `make shard` is run as a postinstall step when this shard is installed, so ImGui links are generated automatically.
 
 ## Development
 
@@ -47,7 +47,7 @@ Development is currently a manual process, and new backends are added as necessa
 
 ## Contributing
 
-1. Fork it (<https://github.com/mattrberry/crystal-imgui-backends/fork>)
+1. Fork it (<https://github.com/mattrbeck/crystal-imgui-backends/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -55,7 +55,7 @@ Development is currently a manual process, and new backends are added as necessa
 
 ## Contributors
 
-- [Matthew Berry](https://github.com/mattrberry) - creator and maintainer
+- [Matthew Beck](https://github.com/mattrbeck) - creator and maintainer
 
 ## Credit
 - Oleh Pyrpin: This shard is heavily inspired by https://github.com/oprypin/crystal-imgui-sfml

@@ -2,7 +2,7 @@ name: imgui-backends
 version: 0.1.0
 
 authors:
-  - Matthew Berry <me@mattrb.com>
+  - Matthew Beck <me@mattrb.com>
 
 dependencies:
   sdl:
