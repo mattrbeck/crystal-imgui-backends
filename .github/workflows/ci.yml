@@ -12,12 +12,12 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
+          - ubuntu-24.04
           - ubuntu-22.04
-          - ubuntu-20.04
-          - ubuntu-18.04
           - macos-latest
-          - macos-12
-          - macos-11
+          - macos-15
+          - macos-14
+          - macos-13
           # - windows-latest
     runs-on: ${{matrix.os}}
     steps:
@@ -50,5 +50,5 @@ jobs:
       - name: Build
         run: make
 
-      # - name: Run tests
-      #   run: crystal spec
+      - name: Build example
+        run: shards build
