@@ -7,6 +7,7 @@ authors:
 dependencies:
   sdl:
     github: ysbaddaden/sdl.cr
+    commit: a86f867
   crystal-raw-gl:
     github: oprypin/crystal-raw-gl
 
