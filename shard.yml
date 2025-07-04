@@ -11,7 +11,7 @@ targets:
 dependencies:
   sdl:
     github: ysbaddaden/sdl.cr
-    commit: a86f867
+    commit: 5a22270
   crystal-raw-gl:
     github: oprypin/crystal-raw-gl
 
