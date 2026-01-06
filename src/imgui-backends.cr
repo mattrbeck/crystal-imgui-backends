@@ -10,14 +10,12 @@ module ImGui
       LibImGuiBackends.ImGui_ImplSDL2_InitForOpenGL(window, gl_context)
     end
 
-    def new_frame(window : SDL::Window) : Nil
-      LibImGuiBackends.ImGui_ImplSDL2_NewFrame(window)
+    def new_frame : Nil
+      LibImGuiBackends.ImGui_ImplSDL2_NewFrame
     end
 
     def process_event(event : SDL::Event) : Bool
-      # TODO: This is a temporary fix until https://github.com/ysbaddaden/sdl.cr/pull/42 is merged
-      ptr = (pointerof(event).as(Int32*) + 2).as(LibSDL::Event*)
-      LibImGuiBackends.ImGui_ImplSDL2_ProcessEvent(ptr)
+      LibImGuiBackends.ImGui_ImplSDL2_ProcessEvent(event)
     end
 
     def shutdown : Nil
